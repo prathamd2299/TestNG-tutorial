@@ -1,30 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-08T10:54:55 IST" name="Suite" finished-at="2023-08-08T10:54:55 IST" duration-ms="62">
+  <suite started-at="2023-08-10T10:32:35 IST" name="Suite" finished-at="2023-08-10T10:32:35 IST" duration-ms="202">
     <groups>
+      <group name="all">
+        <method signature="NewTest3.test7()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" name="test7" class="groupTest.NewTest3"/>
+        <method signature="NewTest3.test8()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" name="test8" class="groupTest.NewTest3"/>
+        <method signature="NewTest3.test9()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" name="test9" class="groupTest.NewTest3"/>
+      </group> <!-- all -->
       <group name="functional">
-        <method signature="NewTest1.test3()[pri:0, instance:groupTest.NewTest1@6cf0e0ba]" name="test3" class="groupTest.NewTest1"/>
+        <method signature="NewTest3.test7()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" name="test7" class="groupTest.NewTest3"/>
       </group> <!-- functional -->
+      <group name="windows.regression">
+        <method signature="NewTest1.test3()[pri:0, instance:groupTest.NewTest1@42a48628]" name="test3" class="groupTest.NewTest1"/>
+        <method signature="NewTest1.test3()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test3" class="groupTest.NewTest1"/>
+      </group> <!-- windows.regression -->
       <group name="regression">
-        <method signature="NewTest1.test3()[pri:0, instance:groupTest.NewTest1@6cf0e0ba]" name="test3" class="groupTest.NewTest1"/>
+        <method signature="NewTest2.test5()[pri:0, instance:groupTest.NewTest2@5542c4ed]" name="test5" class="groupTest.NewTest2"/>
       </group> <!-- regression -->
+      <group name="windows.functional">
+        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@42a48628]" name="test2" class="groupTest.NewTest1"/>
+        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test2" class="groupTest.NewTest1"/>
+      </group> <!-- windows.functional -->
       <group name="smoke">
-        <method signature="NewTest1.test1()[pri:0, instance:groupTest.NewTest1@6cf0e0ba]" name="test1" class="groupTest.NewTest1"/>
+        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@42a48628]" name="test2" class="groupTest.NewTest1"/>
+        <method signature="NewTest3.test7()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" name="test7" class="groupTest.NewTest3"/>
+        <method signature="NewTest1.test1()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test1" class="groupTest.NewTest1"/>
+        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test2" class="groupTest.NewTest1"/>
+        <method signature="NewTest2.test4()[pri:0, instance:groupTest.NewTest2@5542c4ed]" name="test4" class="groupTest.NewTest2"/>
       </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@42a48628]" name="test2" class="groupTest.NewTest1"/>
+        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test2" class="groupTest.NewTest1"/>
+        <method signature="NewTest2.test4()[pri:0, instance:groupTest.NewTest2@5542c4ed]" name="test4" class="groupTest.NewTest2"/>
+        <method signature="NewTest2.test5()[pri:0, instance:groupTest.NewTest2@5542c4ed]" name="test5" class="groupTest.NewTest2"/>
+      </group> <!-- sanity -->
+      <group name="ios.functional">
+        <method signature="NewTest1.test3()[pri:0, instance:groupTest.NewTest1@42a48628]" name="test3" class="groupTest.NewTest1"/>
+        <method signature="NewTest1.test3()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test3" class="groupTest.NewTest1"/>
+      </group> <!-- ios.functional -->
     </groups>
-    <test started-at="2023-08-08T10:54:55 IST" name="Test" finished-at="2023-08-08T10:54:55 IST" duration-ms="62">
-      <class name="groupTest.NewTest1">
-        <test-method signature="test1()[pri:0, instance:groupTest.NewTest1@6cf0e0ba]" started-at="2023-08-08T10:54:55 IST" name="test1" finished-at="2023-08-08T10:54:55 IST" duration-ms="7" status="PASS">
+    <test started-at="2023-08-10T10:32:35 IST" name="Test1" finished-at="2023-08-10T10:32:35 IST" duration-ms="99">
+      <class name="groupTest.NewTest3">
+        <test-method signature="test7()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" started-at="2023-08-10T10:32:35 IST" name="test7" finished-at="2023-08-10T10:32:35 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test3()[pri:0, instance:groupTest.NewTest1@6cf0e0ba]" started-at="2023-08-08T10:54:55 IST" name="test3" finished-at="2023-08-08T10:54:55 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- test7 -->
+        <test-method signature="test8()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" started-at="2023-08-10T10:32:35 IST" name="test8" finished-at="2023-08-10T10:32:35 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method signature="test9()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" started-at="2023-08-10T10:32:35 IST" name="test9" finished-at="2023-08-10T10:32:35 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+      </class> <!-- groupTest.NewTest3 -->
+      <class name="groupTest.NewTest1">
+        <test-method signature="test2()[pri:0, instance:groupTest.NewTest1@42a48628]" started-at="2023-08-10T10:32:35 IST" name="test2" finished-at="2023-08-10T10:32:35 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:groupTest.NewTest1@42a48628]" started-at="2023-08-10T10:32:35 IST" name="test3" finished-at="2023-08-10T10:32:35 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
       </class> <!-- groupTest.NewTest1 -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-08-10T10:32:35 IST" name="Test2" finished-at="2023-08-10T10:32:35 IST" duration-ms="25">
+      <class name="groupTest.NewTest1">
+        <test-method signature="test1()[pri:0, instance:groupTest.NewTest1@815b41f]" started-at="2023-08-10T10:32:35 IST" name="test1" finished-at="2023-08-10T10:32:35 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:groupTest.NewTest1@815b41f]" started-at="2023-08-10T10:32:35 IST" name="test2" finished-at="2023-08-10T10:32:35 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:groupTest.NewTest1@815b41f]" started-at="2023-08-10T10:32:35 IST" name="test3" finished-at="2023-08-10T10:32:35 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- groupTest.NewTest1 -->
+      <class name="groupTest.NewTest2">
+        <test-method signature="test4()[pri:0, instance:groupTest.NewTest2@5542c4ed]" started-at="2023-08-10T10:32:35 IST" name="test4" finished-at="2023-08-10T10:32:35 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method signature="test5()[pri:0, instance:groupTest.NewTest2@5542c4ed]" started-at="2023-08-10T10:32:35 IST" name="test5" finished-at="2023-08-10T10:32:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+      </class> <!-- groupTest.NewTest2 -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>
