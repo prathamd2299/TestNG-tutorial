@@ -1,97 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-10T10:32:35 IST" name="Suite" finished-at="2023-08-10T10:32:35 IST" duration-ms="202">
+  <suite started-at="2023-08-12T12:13:35 IST" name="Default suite" finished-at="2023-08-12T12:13:36 IST" duration-ms="71">
     <groups>
-      <group name="all">
-        <method signature="NewTest3.test7()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" name="test7" class="groupTest.NewTest3"/>
-        <method signature="NewTest3.test8()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" name="test8" class="groupTest.NewTest3"/>
-        <method signature="NewTest3.test9()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" name="test9" class="groupTest.NewTest3"/>
-      </group> <!-- all -->
-      <group name="functional">
-        <method signature="NewTest3.test7()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" name="test7" class="groupTest.NewTest3"/>
-      </group> <!-- functional -->
-      <group name="windows.regression">
-        <method signature="NewTest1.test3()[pri:0, instance:groupTest.NewTest1@42a48628]" name="test3" class="groupTest.NewTest1"/>
-        <method signature="NewTest1.test3()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test3" class="groupTest.NewTest1"/>
-      </group> <!-- windows.regression -->
-      <group name="regression">
-        <method signature="NewTest2.test5()[pri:0, instance:groupTest.NewTest2@5542c4ed]" name="test5" class="groupTest.NewTest2"/>
-      </group> <!-- regression -->
-      <group name="windows.functional">
-        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@42a48628]" name="test2" class="groupTest.NewTest1"/>
-        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test2" class="groupTest.NewTest1"/>
-      </group> <!-- windows.functional -->
-      <group name="smoke">
-        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@42a48628]" name="test2" class="groupTest.NewTest1"/>
-        <method signature="NewTest3.test7()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" name="test7" class="groupTest.NewTest3"/>
-        <method signature="NewTest1.test1()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test1" class="groupTest.NewTest1"/>
-        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test2" class="groupTest.NewTest1"/>
-        <method signature="NewTest2.test4()[pri:0, instance:groupTest.NewTest2@5542c4ed]" name="test4" class="groupTest.NewTest2"/>
-      </group> <!-- smoke -->
-      <group name="sanity">
-        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@42a48628]" name="test2" class="groupTest.NewTest1"/>
-        <method signature="NewTest1.test2()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test2" class="groupTest.NewTest1"/>
-        <method signature="NewTest2.test4()[pri:0, instance:groupTest.NewTest2@5542c4ed]" name="test4" class="groupTest.NewTest2"/>
-        <method signature="NewTest2.test5()[pri:0, instance:groupTest.NewTest2@5542c4ed]" name="test5" class="groupTest.NewTest2"/>
-      </group> <!-- sanity -->
-      <group name="ios.functional">
-        <method signature="NewTest1.test3()[pri:0, instance:groupTest.NewTest1@42a48628]" name="test3" class="groupTest.NewTest1"/>
-        <method signature="NewTest1.test3()[pri:0, instance:groupTest.NewTest1@815b41f]" name="test3" class="groupTest.NewTest1"/>
-      </group> <!-- ios.functional -->
     </groups>
-    <test started-at="2023-08-10T10:32:35 IST" name="Test1" finished-at="2023-08-10T10:32:35 IST" duration-ms="99">
-      <class name="groupTest.NewTest3">
-        <test-method signature="test7()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" started-at="2023-08-10T10:32:35 IST" name="test7" finished-at="2023-08-10T10:32:35 IST" duration-ms="1" status="PASS">
+    <test started-at="2023-08-12T12:13:35 IST" name="Default test" finished-at="2023-08-12T12:13:36 IST" duration-ms="71">
+      <class name="testDependency.TestDependency">
+        <test-method signature="CreateShipment()[pri:2, instance:testDependency.TestDependency@67c27493]" started-at="2023-08-12T12:13:36 IST" name="CreateShipment" finished-at="2023-08-12T12:13:36 IST" duration-ms="10" status="FAIL">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at testDependency.TestDependency.CreateShipment(TestDependency.java:12)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test7 -->
-        <test-method signature="test8()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" started-at="2023-08-10T10:32:35 IST" name="test8" finished-at="2023-08-10T10:32:35 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- CreateShipment -->
+        <test-method signature="TrackShipment()[pri:1, instance:testDependency.TestDependency@67c27493]" started-at="2023-08-12T12:13:36 IST" name="TrackShipment" finished-at="2023-08-12T12:13:36 IST" depends-on-methods="testDependency.TestDependency.CreateShipment" duration-ms="2" status="FAIL">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[invalid tracking number]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: invalid tracking number
+at testDependency.TestDependency.TrackShipment(TestDependency.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test8 -->
-        <test-method signature="test9()[pri:0, instance:groupTest.NewTest3@2a3b5b47]" started-at="2023-08-10T10:32:35 IST" name="test9" finished-at="2023-08-10T10:32:35 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- TrackShipment -->
+        <test-method signature="CancelShipment()[pri:3, instance:testDependency.TestDependency@67c27493]" started-at="2023-08-12T12:13:36 IST" name="CancelShipment" finished-at="2023-08-12T12:13:36 IST" depends-on-methods="testDependency.TestDependency.TrackShipment, testDependency.TestDependency.CreateShipment" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testDependency.TestDependency.CancelShipment() on instance testDependency.TestDependency@67c27493 depends on not successfully finished methods 
+[testDependency.TestDependency.TrackShipment() on instance testDependency.TestDependency@67c27493
+testDependency.TestDependency.CreateShipment() on instance testDependency.TestDependency@67c27493]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testDependency.TestDependency.CancelShipment() on instance testDependency.TestDependency@67c27493 depends on not successfully finished methods 
+[testDependency.TestDependency.TrackShipment() on instance testDependency.TestDependency@67c27493
+testDependency.TestDependency.CreateShipment() on instance testDependency.TestDependency@67c27493]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test9 -->
-      </class> <!-- groupTest.NewTest3 -->
-      <class name="groupTest.NewTest1">
-        <test-method signature="test2()[pri:0, instance:groupTest.NewTest1@42a48628]" started-at="2023-08-10T10:32:35 IST" name="test2" finished-at="2023-08-10T10:32:35 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test3()[pri:0, instance:groupTest.NewTest1@42a48628]" started-at="2023-08-10T10:32:35 IST" name="test3" finished-at="2023-08-10T10:32:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-      </class> <!-- groupTest.NewTest1 -->
-    </test> <!-- Test1 -->
-    <test started-at="2023-08-10T10:32:35 IST" name="Test2" finished-at="2023-08-10T10:32:35 IST" duration-ms="25">
-      <class name="groupTest.NewTest1">
-        <test-method signature="test1()[pri:0, instance:groupTest.NewTest1@815b41f]" started-at="2023-08-10T10:32:35 IST" name="test1" finished-at="2023-08-10T10:32:35 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:0, instance:groupTest.NewTest1@815b41f]" started-at="2023-08-10T10:32:35 IST" name="test2" finished-at="2023-08-10T10:32:35 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test3()[pri:0, instance:groupTest.NewTest1@815b41f]" started-at="2023-08-10T10:32:35 IST" name="test3" finished-at="2023-08-10T10:32:35 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-      </class> <!-- groupTest.NewTest1 -->
-      <class name="groupTest.NewTest2">
-        <test-method signature="test4()[pri:0, instance:groupTest.NewTest2@5542c4ed]" started-at="2023-08-10T10:32:35 IST" name="test4" finished-at="2023-08-10T10:32:35 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method signature="test5()[pri:0, instance:groupTest.NewTest2@5542c4ed]" started-at="2023-08-10T10:32:35 IST" name="test5" finished-at="2023-08-10T10:32:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test5 -->
-      </class> <!-- groupTest.NewTest2 -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- CancelShipment -->
+      </class> <!-- testDependency.TestDependency -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
