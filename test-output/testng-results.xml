@@ -1,115 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="1" skipped="1">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-14T10:15:04 IST" name="Suite" finished-at="2023-08-14T10:15:04 IST" duration-ms="99">
+  <suite started-at="2023-08-15T15:22:11 IST" name="Default suite" finished-at="2023-08-15T15:22:11 IST" duration-ms="89">
     <groups>
-      <group name="security">
-        <method signature="TestGroupDependency.testMethod1()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" name="testMethod1" class="testDependency.TestGroupDependency"/>
-        <method signature="TestGroupDependency.testMethod2()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" name="testMethod2" class="testDependency.TestGroupDependency"/>
-        <method signature="TestGroupDependency.testMethod3()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" name="testMethod3" class="testDependency.TestGroupDependency"/>
-      </group> <!-- security -->
-      <group name="performance">
-        <method signature="TestGroupDependency.testMethod6()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" name="testMethod6" class="testDependency.TestGroupDependency"/>
-      </group> <!-- performance -->
-      <group name="usability">
-        <method signature="TestGroupDependency.testMethod4()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" name="testMethod4" class="testDependency.TestGroupDependency"/>
-        <method signature="TestGroupDependency.testMethod5()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" name="testMethod5" class="testDependency.TestGroupDependency"/>
-      </group> <!-- usability -->
     </groups>
-    <test started-at="2023-08-14T10:15:04 IST" name="Test" finished-at="2023-08-14T10:15:04 IST" duration-ms="99">
-      <class name="testDependency.TestGroupDependency">
-        <test-method signature="testMethod1()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" started-at="2023-08-14T10:15:04 IST" name="testMethod1" finished-at="2023-08-14T10:15:04 IST" duration-ms="15" status="PASS">
+    <test started-at="2023-08-15T15:22:11 IST" name="Default test" finished-at="2023-08-15T15:22:11 IST" duration-ms="89">
+      <class name="dataProvider.DataProviderPartially">
+        <test-method signature="testLogin(java.lang.String)[pri:0, instance:dataProvider.DataProviderPartially@6069db50]" started-at="2023-08-15T15:22:11 IST" name="testLogin" data-provider="testData1" finished-at="2023-08-15T15:22:11 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[payal]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod1 -->
-        <test-method signature="testMethod2()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" started-at="2023-08-14T10:15:04 IST" name="testMethod2" finished-at="2023-08-14T10:15:04 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String)[pri:0, instance:dataProvider.DataProviderPartially@6069db50]" started-at="2023-08-15T15:22:11 IST" name="testLogin" data-provider="testData1" finished-at="2023-08-15T15:22:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ananta]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod2 -->
-        <test-method signature="testMethod3()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" started-at="2023-08-14T10:15:04 IST" name="testMethod3" finished-at="2023-08-14T10:15:04 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String)[pri:0, instance:dataProvider.DataProviderPartially@6069db50]" started-at="2023-08-15T15:22:11 IST" name="testLogin" data-provider="testData1" finished-at="2023-08-15T15:22:11 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bhavna]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod3 -->
-        <test-method signature="testMethod4()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" started-at="2023-08-14T10:15:04 IST" name="testMethod4" depends-on-groups="security" finished-at="2023-08-14T10:15:04 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.ArithmeticException">
-            <message>
-              <![CDATA[/ by zero]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ArithmeticException: / by zero
-at testDependency.TestGroupDependency.testMethod4(TestGroupDependency.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ArithmeticException -->
+        </test-method> <!-- testLogin -->
+        <test-method signature="testLogin(java.lang.String)[pri:0, instance:dataProvider.DataProviderPartially@6069db50]" started-at="2023-08-15T15:22:11 IST" name="testLogin" data-provider="testData1" finished-at="2023-08-15T15:22:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[navneet]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod4 -->
-        <test-method signature="testMethod5()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" started-at="2023-08-14T10:15:04 IST" name="testMethod5" depends-on-groups="security" finished-at="2023-08-14T10:15:04 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod5 -->
-        <test-method signature="testMethod6()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf]" started-at="2023-08-14T10:15:04 IST" name="testMethod6" depends-on-groups="usability" finished-at="2023-08-14T10:15:04 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestGroupDependency.testMethod6()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf] depends on not successfully finished methods in group "usability"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestGroupDependency.testMethod6()[pri:0, instance:testDependency.TestGroupDependency@2f9f7dcf] depends on not successfully finished methods in group "usability"
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod6 -->
-      </class> <!-- testDependency.TestGroupDependency -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testLogin -->
+      </class> <!-- dataProvider.DataProviderPartially -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
