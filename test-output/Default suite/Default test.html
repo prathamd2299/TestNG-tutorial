@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 16 10:50:01 IST 2023</td>
+<td>Started on:</td><td>Wed Aug 16 11:33:56 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30085 ms)</td>
+<tr><td>Total time:</td><td>27 seconds (27568 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,81 +76,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.google.www.TimeOut.testmethod1()'><b>testmethod1</b><br>Test class: com.google.www.TimeOut</td>
-<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method com.google.www.TimeOut.testmethod1() didn&apos;t finish within the time-out 30000
-	at java.base@17.0.8/jdk.internal.misc.Unsafe.park(Native Method)
-	at java.base@17.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
-	at java.base@17.0.8/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1866)
-	at java.base@17.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
-	at java.base@17.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
-	at java.base@17.0.8/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1939)
-	at java.base@17.0.8/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at app//org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler$$Lambda$287/0x0000023a39217b28.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$390/0x0000023a3924c000.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at app//org.openqa.selenium.remote.http.Filter$$Lambda$288/0x0000023a39217d58.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
-	at app//org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at app//com.google.www.TimeOut.testmethod1(TimeOut.java:11)
-	at java.base@17.0.8/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.8/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.8/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.8/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
-	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
-	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
-	at java.base@17.0.8/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1431467659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1431467659'><pre>org.testng.internal.thread.ThreadTimeoutException: Method com.google.www.TimeOut.testmethod1() didn&apos;t finish within the time-out 30000
-	at java.base@17.0.8/jdk.internal.misc.Unsafe.park(Native Method)
-	at java.base@17.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
-	at java.base@17.0.8/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1866)
-	at java.base@17.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
-	at java.base@17.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
-	at java.base@17.0.8/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1939)
-	at java.base@17.0.8/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at app//org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler$$Lambda$287/0x0000023a39217b28.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$390/0x0000023a3924c000.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at app//org.openqa.selenium.remote.http.Filter$$Lambda$288/0x0000023a39217d58.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
-	at app//org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at app//com.google.www.TimeOut.testmethod1(TimeOut.java:11)
-	at java.base@17.0.8/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.8/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.8/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.8/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
-	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
-	at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
-	at java.base@17.0.8/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base@17.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base@17.0.8/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>30</td>
-<td>com.google.www.TimeOut@72967906</td></tr>
+<td title='invocation.ThreadPollSize.testmethod3()'><b>testmethod3</b><br>Test class: invocation.ThreadPollSize</td>
+<td></td>
+<td>15</td>
+<td>invocation.ThreadPollSize@5b8dfcc1</td></tr>
+<tr>
+<td title='invocation.ThreadPollSize.testmethod3()'><b>testmethod3</b><br>Test class: invocation.ThreadPollSize</td>
+<td></td>
+<td>12</td>
+<td>invocation.ThreadPollSize@5b8dfcc1</td></tr>
+<tr>
+<td title='invocation.ThreadPollSize.testmethod3()'><b>testmethod3</b><br>Test class: invocation.ThreadPollSize</td>
+<td></td>
+<td>15</td>
+<td>invocation.ThreadPollSize@5b8dfcc1</td></tr>
 </table><p>
 </body>
 </html>
