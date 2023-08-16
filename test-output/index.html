@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\admin\AppData\Local\Temp\testng-eclipse--1841285241\testng-customsuite.xml</span>
+                    <span>C:\Users\admin\AppData\Local\Temp\testng-eclipse-753745922\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="dataProvider.DataProviderExample" class="method navigator-link" hash-for-method="login(Admin, admin123)">login(Admin, admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +117,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="dataProvider.DataProviderPartially" class="method navigator-link" hash-for-method="testLogin(navneet)">testLogin(navneet)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="dataProvider.DataProviderPartially" class="method navigator-link" hash-for-method="testLogin(payal)">testLogin(payal)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="dataProvider.DataProviderPartially" class="method navigator-link" hash-for-method="testLogin(ananta)">testLogin(ananta)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="dataProvider.DataProviderPartially" class="method navigator-link" hash-for-method="testLogin(bhavna)">testLogin(bhavna)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="dataProvider.DataProviderExample" class="method navigator-link" hash-for-method="login(student, Password123)">login(student, Password123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -133,42 +132,58 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">dataProvider.DataProviderPartially</span>
+              <img src="failed.png"/>
+              <span class="class-name">dataProvider.DataProviderExample</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogin(navneet)">
-                  </a> <!-- testLogin(navneet) -->
-                  <span class="method-name">testLogin</span>
-                  <span class="parameters">(navneet)</span>
+                  <a name="login(Admin, admin123)">
+                  </a> <!-- login(Admin, admin123) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(Admin,admin123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Credentials is invalid expected [Logged In Successfully | Practice Test Automation] but found [Test Login | Practice Test Automation]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at dataProvider.DataProviderExample.login(DataProviderExample.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dataProvider.DataProviderExample</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogin(payal)">
-                  </a> <!-- testLogin(payal) -->
-                  <span class="method-name">testLogin</span>
-                  <span class="parameters">(payal)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLogin(ananta)">
-                  </a> <!-- testLogin(ananta) -->
-                  <span class="method-name">testLogin</span>
-                  <span class="parameters">(ananta)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLogin(bhavna)">
-                  </a> <!-- testLogin(bhavna) -->
-                  <span class="method-name">testLogin</span>
-                  <span class="parameters">(bhavna)</span>
+                  <a name="login(student, Password123)">
+                  </a> <!-- login(student, Password123) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(student,Password123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,7 +191,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\admin\AppData\Local\Temp\testng-eclipse--1841285241\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\admin\AppData\Local\Temp\testng-eclipse-753745922\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -185,7 +200,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;dataProvider.DataProviderPartially&quot;/&gt;
+      &lt;class name=&quot;dataProvider.DataProviderExample&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -225,28 +240,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLogin')
-data.setCell(0, 2, 'dataProvider.DataProviderPartially')
-data.setCell(0, 3, 7);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'dataProvider.DataProviderExample')
+data.setCell(0, 3, 40575);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLogin')
-data.setCell(1, 2, 'dataProvider.DataProviderPartially')
-data.setCell(1, 3, 3);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLogin')
-data.setCell(2, 2, 'dataProvider.DataProviderPartially')
-data.setCell(2, 3, 1);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testLogin')
-data.setCell(3, 2, 'dataProvider.DataProviderPartially')
-data.setCell(3, 3, 1);
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'dataProvider.DataProviderExample')
+data.setCell(1, 3, 32756);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -272,22 +279,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">dataProvider.DataProviderPartially</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">dataProvider.DataProviderExample</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testLogin(payal)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login(Admin, admin123)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testLogin(ananta)</span>
+                <span class="method-name">login(student, Password123)</span>
                 <span class="method-start">11 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testLogin(bhavna)</span>
-                <span class="method-start">15 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testLogin(navneet)</span>
-                <span class="method-start">20 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

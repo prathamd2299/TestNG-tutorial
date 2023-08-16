@@ -31,8 +31,19 @@ public class DataProviderExample {
 		driver.quit();
 	}
 
-	@DataProvider(name = "loginData")
-	public Object[][] testData() {
+//	@DataProvider(name = "loginData")
+//	public Object[][] testData() {
+//		Object[][] data = new Object[2][2];
+//		data[0][0] = "student";
+//		data[0][1] = "Password123";
+//		data[1][0] = "Admin";
+//		data[1][1] = "admin123";
+//		return data;
+//	}
+	
+	//This will run parallely
+	@DataProvider(parallel = true)
+	public Object[][] loginData() {
 		Object[][] data = new Object[2][2];
 		data[0][0] = "student";
 		data[0][1] = "Password123";
