@@ -1,25 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-16T11:33:56 IST" name="Default suite" finished-at="2023-08-16T11:34:24 IST" duration-ms="27568">
+  <suite started-at="2023-08-16T17:56:30 IST" name="Suite" finished-at="2023-08-16T17:56:31 IST" duration-ms="183">
     <groups>
     </groups>
-    <test started-at="2023-08-16T11:33:56 IST" name="Default test" finished-at="2023-08-16T11:34:24 IST" duration-ms="27568">
-      <class name="invocation.ThreadPollSize">
-        <test-method signature="testmethod3()[pri:0, instance:invocation.ThreadPollSize@5b8dfcc1]" started-at="2023-08-16T11:33:56 IST" name="testmethod3" finished-at="2023-08-16T11:34:11 IST" duration-ms="15258" status="PASS">
+    <test started-at="2023-08-16T17:56:30 IST" name="Test1" finished-at="2023-08-16T17:56:31 IST" duration-ms="82">
+      <class name="parallelExecution.TestClass1">
+        <test-method signature="testMethod1()[pri:0, instance:parallelExecution.TestClass1@4f83df68]" started-at="2023-08-16T17:56:30 IST" name="testMethod1" finished-at="2023-08-16T17:56:31 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testmethod3 -->
-        <test-method signature="testmethod3()[pri:0, instance:invocation.ThreadPollSize@5b8dfcc1]" started-at="2023-08-16T11:33:56 IST" name="testmethod3" finished-at="2023-08-16T11:34:12 IST" duration-ms="15386" status="PASS">
+        </test-method> <!-- testMethod1 -->
+        <test-method signature="testMethod2()[pri:0, instance:parallelExecution.TestClass1@4f83df68]" started-at="2023-08-16T17:56:31 IST" name="testMethod2" finished-at="2023-08-16T17:56:31 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testmethod3 -->
-        <test-method signature="testmethod3()[pri:0, instance:invocation.ThreadPollSize@5b8dfcc1]" started-at="2023-08-16T11:34:11 IST" name="testmethod3" finished-at="2023-08-16T11:34:24 IST" duration-ms="12241" status="PASS">
+        </test-method> <!-- testMethod2 -->
+        <test-method signature="testMethod3()[pri:0, instance:parallelExecution.TestClass1@4f83df68]" started-at="2023-08-16T17:56:31 IST" name="testMethod3" finished-at="2023-08-16T17:56:31 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testmethod3 -->
-      </class> <!-- invocation.ThreadPollSize -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testMethod3 -->
+        <test-method signature="testMethod4()[pri:0, instance:parallelExecution.TestClass1@4f83df68]" started-at="2023-08-16T17:56:31 IST" name="testMethod4" finished-at="2023-08-16T17:56:31 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod4 -->
+      </class> <!-- parallelExecution.TestClass1 -->
+      <class name="parallelExecution.TestClass2">
+        <test-method signature="testMethod5()[pri:0, instance:parallelExecution.TestClass2@3349e9bb]" started-at="2023-08-16T17:56:30 IST" name="testMethod5" finished-at="2023-08-16T17:56:31 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod5 -->
+        <test-method signature="testMethod6()[pri:0, instance:parallelExecution.TestClass2@3349e9bb]" started-at="2023-08-16T17:56:31 IST" name="testMethod6" finished-at="2023-08-16T17:56:31 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod6 -->
+        <test-method signature="testMethod7()[pri:0, instance:parallelExecution.TestClass2@3349e9bb]" started-at="2023-08-16T17:56:31 IST" name="testMethod7" finished-at="2023-08-16T17:56:31 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod7 -->
+      </class> <!-- parallelExecution.TestClass2 -->
+      <class name="parallelExecution.TestClass3">
+        <test-method signature="testMethod10()[pri:0, instance:parallelExecution.TestClass3@409bf450]" started-at="2023-08-16T17:56:31 IST" name="testMethod10" finished-at="2023-08-16T17:56:31 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod10 -->
+        <test-method signature="testMethod11()[pri:0, instance:parallelExecution.TestClass3@409bf450]" started-at="2023-08-16T17:56:31 IST" name="testMethod11" finished-at="2023-08-16T17:56:31 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod11 -->
+        <test-method signature="testMethod8()[pri:0, instance:parallelExecution.TestClass3@409bf450]" started-at="2023-08-16T17:56:31 IST" name="testMethod8" finished-at="2023-08-16T17:56:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod8 -->
+        <test-method signature="testMethod9()[pri:0, instance:parallelExecution.TestClass3@409bf450]" started-at="2023-08-16T17:56:31 IST" name="testMethod9" finished-at="2023-08-16T17:56:31 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod9 -->
+      </class> <!-- parallelExecution.TestClass3 -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-08-16T17:56:31 IST" name="Test2" finished-at="2023-08-16T17:56:31 IST" duration-ms="19">
+      <class name="parallelExecution.TestClass4">
+        <test-method signature="testMethod12()[pri:0, instance:parallelExecution.TestClass4@40a4337a]" started-at="2023-08-16T17:56:31 IST" name="testMethod12" finished-at="2023-08-16T17:56:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod12 -->
+        <test-method signature="testMethod13()[pri:0, instance:parallelExecution.TestClass4@40a4337a]" started-at="2023-08-16T17:56:31 IST" name="testMethod13" finished-at="2023-08-16T17:56:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod13 -->
+        <test-method signature="testMethod14()[pri:0, instance:parallelExecution.TestClass4@40a4337a]" started-at="2023-08-16T17:56:31 IST" name="testMethod14" finished-at="2023-08-16T17:56:31 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod14 -->
+        <test-method signature="testMethod15()[pri:0, instance:parallelExecution.TestClass4@40a4337a]" started-at="2023-08-16T17:56:31 IST" name="testMethod15" finished-at="2023-08-16T17:56:31 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod15 -->
+      </class> <!-- parallelExecution.TestClass4 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>
