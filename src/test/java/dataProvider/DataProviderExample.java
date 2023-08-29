@@ -40,8 +40,8 @@ public class DataProviderExample {
 //		data[1][1] = "admin123";
 //		return data;
 //	}
-	
-	//This will run parallely
+
+	// This will run parallely
 	@DataProvider(parallel = true)
 	public Object[][] loginData() {
 		Object[][] data = new Object[2][2];
